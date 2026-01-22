@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Invitation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- OPEN INVITATION OVERLAY -->
+<div id="overlay">
+  <div class="overlay-content">
+    <h1>Deniya & Kekey</h1>
+    <p>We joyfully invite you to celebrate our sacred union</p>
+    <button id="openInvitation">Open Invitation</button>
+  </div>
+</div>
+
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<main>
+
+<!-- 1. HERO SECTION -->
+<section class="section profile fade">
+
+  <!-- FOTO DI ATAS -->
+  <img
+    src="images/couple-bride-groom.jpg"
+    alt="Bride and Groom"
+    class="profile-photo"
+  >
+
+  <h2>Bride & Groom</h2>
+
+  <div class="couple">
+    <div>
+      <h3>I Made Deniya Aryadi</h3>
+      <p>Putra dari<br>
+      Bapak I Made Saryadi<br>
+      & Ibu Ni Wayan Srinadi</p>
+    </div>
+
+    <div>
+      <h3>Kayla Windy Sekarasri</h3>
+      <p>Putri dari<br>
+      Bapak Gandi Herlambang<br>
+      & Ibu Dewi Hariani</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- 3. EVENT DETAILS -->
+<section class="section fade">
+  <h2>Wedding Ceremony</h2>
+  <p>Date: 12 December 2026</p>
+  <p>Time: 10:00 AM</p>
+  <p>Location: Denpasar, Bali</p>
+</section>
+
+<!-- 4. COUNTDOWN -->
+<section class="section fade">
+  <h2>Countdown to Our Wedding Day</h2>
+
+  <div id="countdown" class="countdown">
+    <div>
+      <span id="days">0</span>
+      <small>Days</small>
+    </div>
+    <div>
+      <span id="hours">0</span>
+      <small>Hours</small>
+    </div>
+    <div>
+      <span id="minutes">0</span>
+      <small>Minutes</small>
+    </div>
+    <div>
+      <span id="seconds">0</span>
+      <small>Seconds</small>
+    </div>
+  </div>
+</section>
+
+
+<!-- 5. GOOGLE MAPS -->
+<section class="section fade">
+  <h2>Location Map</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.59241349502992!2d115.10990948318221!3d-8.549889258093586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23a6ec60cf651%3A0x2f61b627ae045f3a!2sJl.%20Anyelir%2012%2C%20Dauh%20Peken%2C%20Kec.%20Tabanan%2C%20Kabupaten%20Tabanan%2C%20Bali!5e0!3m2!1sid!2sid!4v1769057852353!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+<!-- 6. GALLERY -->
+<section class="section fade gallery">
+  <h2>Our Moments</h2>
+  <img src="images/gallery1.jpg">
+  <img src="images/gallery2.jpg">
+  <img src="images/gallery3.jpg">
+</section>
+
+<!-- 7. LOVE STORY -->
+<section class="section fade">
+  <h2>Love Story</h2>
+  <ul class="timeline">
+    <li>2019 – First Meet</li>
+    <li>2022 – Engagement</li>
+    <li>2026 – Forever Begins</li>
+  </ul>
+</section>
+
+<!-- 8. RSVP -->
+<section class="section fade">
+  <h2>RSVP</h2>
+  <form id="rsvpForm">
+    <input type="text" placeholder="Your Name" required />
+    <select required>
+      <option value="">Attendance</option>
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+    <!-- ADMIN BUTTON -->
+  <button id="downloadRSVP" style="margin-top:30px">
+    Download RSVP Spreadsheet
+  </button>
+</section>
+
+<!-- 9. GUEST WISHES -->
+<section class="section fade" id="guest-wishes">
+  <h2>Guest Wishes</h2>
+
+  <form id="wishForm">
+    <input type="text" id="guestName" placeholder="Your Name" required>
+    <textarea id="guestMessage" placeholder="Your Wish" required></textarea>
+    <button type="submit">Send Wish</button>
+  </form>
+
+  <div id="wishList"></div>
+</section>
+
+
+<!-- 10. WEDDING GIFT -->
+<section class="section fade">
+  <h2>Wedding Gift</h2>
+  <p>Bank Account: 123-456-789</p>
+</section>
+
+<!-- 11. CLOSING -->
+<section class="section closing fade">
+  <h2>Thank You</h2>
+  <p>With love, Made & Ayu</p>
+  <button id="musicToggle">Pause Music</button>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
